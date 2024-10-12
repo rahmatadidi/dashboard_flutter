@@ -1,7 +1,6 @@
-// screen/dashboard_screen.dart
 import 'package:flutter/material.dart';
-import '../widgets/stat_card.dart'; // Import reusable StatCard
-import '../widgets/course_card.dart'; // Import reusable CourseCard
+import '../widgets/stat_card.dart';
+import '../widgets/course_card.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -72,8 +71,6 @@ class DashboardScreen extends StatelessWidget {
                         ],
                       ),
                     ),
-
-                    // Bagian Tab Navigasi (Dashboard, Courses, Summary, dll.)
                     Container(
                       color: Colors.white,
                       child: Row(
@@ -95,8 +92,6 @@ class DashboardScreen extends StatelessWidget {
                     ),
 
                     const SizedBox(height: 16),
-
-                    // Bagian Statistik menggunakan reusable StatCard
                     const Padding(
                       padding: EdgeInsets.all(16.0),
                       child: Row(
@@ -121,8 +116,6 @@ class DashboardScreen extends StatelessWidget {
                         ],
                       ),
                     ),
-
-                    // Bagian List Courses menggunakan reusable CourseCard
                     const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16.0),
                       child: Text(

@@ -1,4 +1,3 @@
-// widgets/course_card.dart
 import 'package:flutter/material.dart';
 
 class CourseCard extends StatelessWidget {

@@ -1,6 +1,5 @@
-// main.dart
 import 'package:flutter/material.dart';
-import 'screens/dashboard_screen.dart'; // Import dashboard screen
+import 'screens/dashboard_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,8 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      // ignore: prefer_const_constructors
-      home: DashboardScreen(), // Memanggil DashboardScreen sebagai home
+      home: const DashboardScreen(),
     );
   }
 }
