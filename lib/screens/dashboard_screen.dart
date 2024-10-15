@@ -118,14 +118,28 @@ class DashboardScreen extends StatelessWidget {
                                   ),
                                 ),
                                 Container(
-                                  color: Colors.white,
+                                  width: MediaQuery.of(context).size.width,
+                                  decoration: BoxDecoration(
+                                    border: Border.all(
+                                        color: Colors.purple.withOpacity(0.2),
+                                        width: 0.3),
+                                  ),
                                   child: Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceEvenly,
                                     children: [
-                                      TextButton(
+                                      Container(
+                                        // ignore: sort_child_properties_last
+                                        child: TextButton(
                                           onPressed: () {},
-                                          child: const Text("Dashboard")),
+                                          child: const Text("Dashboard"),
+                                        ),
+                                        decoration: const BoxDecoration(
+                                            border: Border(
+                                          bottom: BorderSide(
+                                              color: Colors.orange, width: 2.0),
+                                        )),
+                                      ),
                                       TextButton(
                                           onPressed: () {},
                                           child: const Text("Courses")),
@@ -186,24 +200,27 @@ class DashboardScreen extends StatelessWidget {
                                   padding: const EdgeInsets.all(16.0),
                                   child: GridView.count(
                                     shrinkWrap: true,
-                                    crossAxisCount: 2,
-                                    childAspectRatio: 3 / 2,
-                                    mainAxisSpacing: 16,
-                                    crossAxisSpacing: 16,
+                                    crossAxisCount: 4,
+                                    mainAxisSpacing: 12,
+                                    crossAxisSpacing: 12,
                                     children: const [
                                       CourseCard(
+                                          imageSrc: 'assets/images/image1.png',
                                           title: 'Nasi Padang',
                                           subtitle: 'Nasi Padang Pedas',
                                           buttonText: 'Mulai Tonton Video'),
                                       CourseCard(
+                                          imageSrc: 'assets/images/image1.png',
                                           title: 'Nasi Paha',
                                           subtitle: 'Nasi Paha Pedas',
                                           buttonText: 'Lanjut Tonton'),
                                       CourseCard(
+                                          imageSrc: 'assets/images/image1.png',
                                           title: 'Nasi Uduk',
                                           subtitle: 'Nasi Uduk Pedas',
                                           buttonText: 'Mulai Tonton Video'),
                                       CourseCard(
+                                          imageSrc: 'assets/images/image1.png',
                                           title: 'Nasi Ayam',
                                           subtitle: 'Nasi Ayam Geprek',
                                           buttonText: 'Beli Course Ini'),

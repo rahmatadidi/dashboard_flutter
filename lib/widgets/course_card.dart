@@ -4,12 +4,13 @@ class CourseCard extends StatelessWidget {
   final String title;
   final String subtitle;
   final String buttonText;
-
+  final String imageSrc;
   const CourseCard({
     super.key,
     required this.title,
     required this.subtitle,
     required this.buttonText,
+    required this.imageSrc,
   });
 
   @override
@@ -28,20 +29,28 @@ class CourseCard extends StatelessWidget {
           ),
         ],
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            title,
-            style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-          ),
-          Text(subtitle),
-          const Spacer(),
-          ElevatedButton(
-            onPressed: () {},
-            child: Text(buttonText),
-          ),
-        ],
+      child: SizedBox(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(
+              child: Image.asset(
+                imageSrc,
+                fit: BoxFit.cover,
+              ),
+            ),
+            Text(
+              title,
+              style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            ),
+            Text(subtitle),
+            const Spacer(),
+            ElevatedButton(
+              onPressed: () {},
+              child: Text(buttonText),
+            ),
+          ],
+        ),
       ),
     );
   }
