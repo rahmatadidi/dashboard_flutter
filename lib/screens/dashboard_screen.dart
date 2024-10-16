@@ -233,6 +233,54 @@ class DashboardScreen extends StatelessWidget {
                         ),
                       ),
                     )),
+                Container(
+                    color: Colors.black,
+                    height: MediaQuery.of(context).size.height / 2,
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 50.0, top: 50.0),
+                          child: SizedBox(
+                            width: 400,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                const Image(
+                                    image: AssetImage(
+                                        'assets/images/logo-figma.png')),
+                                const SizedBox(
+                                  height: 20,
+                                ),
+                                const Text(
+                                  "Solusi untuk hidup sehat diawali dengan membeli makanan yang enak ya",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                                const SizedBox(height: 20),
+                                Row(
+                                  children: [
+                                    Image.asset(
+                                      "assets/images/logoyt.png",
+                                    ),
+                                    const SizedBox(
+                                      width: 20,
+                                    ),
+                                    Image.asset(
+                                      "assets/images/logoig.png",
+                                    ),
+                                    const SizedBox(
+                                      width: 20,
+                                    ),
+                                    Image.asset("assets/images/logofb.png")
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
+                    ))
               ],
             ),
           )),
