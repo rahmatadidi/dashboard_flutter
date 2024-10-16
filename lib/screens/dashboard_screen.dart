@@ -278,7 +278,65 @@ class DashboardScreen extends StatelessWidget {
                               ],
                             ),
                           ),
-                        )
+                        ),
+                        Container(
+                            padding: const EdgeInsets.only(left: 150, top: 50),
+                            child: const Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Top 4 Category",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                SizedBox(
+                                  height: 25,
+                                ),
+                                Text(
+                                  "Sehat",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                                SizedBox(height: 10),
+                                Text("Sehat aja",
+                                    style: TextStyle(color: Colors.grey)),
+                                SizedBox(height: 10),
+                                Text("Sehat Banget",
+                                    style: TextStyle(color: Colors.grey)),
+                                SizedBox(height: 10),
+                                Text("Suhu",
+                                    style: TextStyle(color: Colors.grey))
+                              ],
+                            )),
+                        Container(
+                            padding: const EdgeInsets.only(left: 300, top: 50),
+                            child: const Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Quick Links",
+                                  style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                                SizedBox(
+                                  height: 25,
+                                ),
+                                Text(
+                                  "Home",
+                                  style: TextStyle(color: Colors.grey),
+                                ),
+                                SizedBox(height: 10),
+                                Text("Course",
+                                    style: TextStyle(color: Colors.grey)),
+                                SizedBox(height: 10),
+                                Text("About",
+                                    style: TextStyle(color: Colors.grey)),
+                                SizedBox(height: 10),
+                                Text("Contact",
+                                    style: TextStyle(color: Colors.grey))
+                              ],
+                            ))
                       ],
                     ))
               ],
